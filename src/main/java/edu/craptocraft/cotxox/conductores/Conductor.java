@@ -50,6 +50,7 @@ public class Conductor {
         calcularValoracionMedia();
     }
 
+    // Get the average of the ArrayList "valoraciones".
     private double calcularValoracionMedia() {
         double resultValoracionMedia = this.valoraciones.stream().mapToDouble(d -> d).average().getAsDouble();
         return resultValoracionMedia;
