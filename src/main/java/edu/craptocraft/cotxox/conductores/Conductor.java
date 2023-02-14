@@ -50,10 +50,16 @@ public class Conductor {
         calcularValoracionMedia();
     }
 
-    // Get the average of the ArrayList "valoraciones".
+    // For "valoracion" in "this.valoraciones", add it to "sumaValoraciones"
+    // and then divide that for "this.valoraciones" size/length.
+    // This will get the average of "this.valoraciones" and return it.
     private double calcularValoracionMedia() {
-        double resultValoracionMedia = this.valoraciones.stream().mapToDouble(d -> d).average().getAsDouble();
-        return resultValoracionMedia;
+        double sumaValoraciones = 0;
+        for (byte valoracion : this.valoraciones) {
+            sumaValoraciones += valoracion;
+        }
+        this.valoracionMedia = sumaValoraciones / this.valoraciones.size();
+        return this.valoracionMedia;
     }
 
     public boolean isOcupado() {
