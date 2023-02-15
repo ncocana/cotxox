@@ -19,12 +19,12 @@ public class ConductorTest {
 	private String[] nombres = new String[] { "Samantha", "Fox" };
 	private String[] matricula = { "4ABC123", "5DHJ234" };
 	private String[] modelos = { "Chevy Malibu", "Toyota Prius" };
+	List<Conductor> poolConductores = new ArrayList<Conductor>();
+	Conductor conductor = null;
 
 	@Before
 	public void setup_conductor() {
 
-		List<Conductor> poolConductores = new ArrayList<Conductor>();
-		Conductor conductor = null;
 
 		for (String nombre : nombres) {
 			conductor = new Conductor(nombre);
@@ -44,6 +44,7 @@ public class ConductorTest {
 
 	}
 	
+	// The values showed are in the Array used initially.
 	@Test
 	public void test_getConductorValues() {
 
@@ -53,6 +54,14 @@ public class ConductorTest {
 			assertTrue(Arrays.asList(matricula).contains(conductora.getMatricula()));
 			assertEquals(3.0, conductora.getValoracion(), 0.0);
 		}
+	}
+	
+	// Test if the average valoration is correctly calculated.
+	@Test
+	public void test_getValoracionMedia() {
+
+		conductor.setValoracion((byte) 5);
+		assertEquals(4.0, conductor.getValoracion(), 0.0);
 	}
 
 }
