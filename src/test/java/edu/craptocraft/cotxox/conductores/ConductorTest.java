@@ -1,4 +1,4 @@
-package edu.craptocraft.cotxox;
+package edu.craptocraft.cotxox.conductores;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import edu.craptocraft.cotxox.conductores.Conductor;
-import edu.craptocraft.cotxox.conductores.PoolConductores;
 
 public class ConductorTest {
 
@@ -19,8 +17,8 @@ public class ConductorTest {
 	private String[] nombres = new String[] { "Samantha", "Fox" };
 	private String[] matricula = { "4ABC123", "5DHJ234" };
 	private String[] modelos = { "Chevy Malibu", "Toyota Prius" };
-	List<Conductor> poolConductores = new ArrayList<Conductor>();
-	Conductor conductor = null;
+	private List<Conductor> poolConductores = new ArrayList<Conductor>();
+	private Conductor conductor = null;
 
 	@Before
 	public void setup_conductor() {
