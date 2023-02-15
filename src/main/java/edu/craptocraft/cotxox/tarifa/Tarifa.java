@@ -4,10 +4,9 @@ import edu.craptocraft.cotxox.carrera.Carrera;
 
 public class Tarifa {
     
-    static final double COSTE_MILLA = 1.35;
-    static final double COSTE_MINUTO = 0.35;
-    static final double COSTE_MINIMO = 5.0;
-    static final byte PORCENTAJE_COMISION = 20;
+    private static final double COSTE_MILLA = 1.35;
+    private static final double COSTE_MINUTO = 0.35;
+    private static final double COSTE_MINIMO = 5.0;
 
     public Tarifa() {}
 
