@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This is an exam in Java of previous years of Proggramation in CIFP Francesc de Borja Moll. The idea was to practice Java and gain a deeper understanding of Classes and Lists.   
+This is an exam in Java of previous years of Proggramation in CIFP Francesc de Borja Moll. The idea was to practice Java and gain a deeper understanding of Classes, Arrays and Lists.   
 
 **Link of the exam:** [Cotxox](https://github.com/dfleta/cotxox).  
 
