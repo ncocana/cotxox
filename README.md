@@ -19,8 +19,8 @@ We are going to build a prototype of the Cotxox application that allows to manag
 
 ## UML Diagram
 
-!["Diagrama de clases UML"](./docs/diagram_uml_cotxox.jpg "Diagrama de clases UML")
+!["Diagrama de clases UML"](./docs/diagram_uml_cotxox.png "Diagrama de clases UML")
 
 ## Application output
 
-(imagen)
+![Salida consola cotxox](https://user-images.githubusercontent.com/117761602/219400354-6f253bd3-25cb-4d9a-9eb4-8f8e212f7a02.png)
